@@ -16,10 +16,9 @@ function Player(name){
 
 // FUNCTION ROLL - SIMULATES ROLL OF ONE DICE AND RETURNS VALUES 1 THROUGH 6
 function Roll(){
-	rollScore = function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-  };
-}
+	rollScore = Math.floor(Math.random() * (1 - 6 + 1)) + min;
+  return rollScore;
+};
 
 // ON CLICK OF ROLL BUTTON PERFORMS THE ROLL FUNCTION
   $("#roll").click(function() {
