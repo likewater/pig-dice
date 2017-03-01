@@ -13,16 +13,16 @@ function Player(name){
   this.totalScore = 0;
 };
 
-// FUNCTION SCORE - CREATES SCORE OBJECT
-function currentScore(playerName, rollValue){
-  this.player
-  this.currentScore;
-};
+// // FUNCTION SCORE - CREATES SCORE OBJECT
+// function currentScore(playerName, rollValue){
+//   this.player
+//   this.currentScore;
+// };
 
 // FUNCTION ROLL - SIMULATES ROLL OF ONE DICE AND RETURNS VALUES 1 THROUGH 6
 function Roll(){
 //math random function
-return number to Score function  
+return number to Score function
 };
 
 // ON CLICK OF ROLL BUTTON PERFORMS THE ROLL FUNCTION
@@ -37,9 +37,11 @@ return number to Score function
 
 // PAGE LOAD FUNCTION
  $(document).ready(function(){
-   $("form#new-contact").submit(function(event) {
- event.preventDefault();
+   $("form#playGame").submit(function(event) {
+     event.preventDefault();
+     var inputtedName = $("#name").val();
+     var newPlayer = new Player(inputtedName);
+     // DISPLAY MESSAGE FOR PLAYER ONE TO GO FIRST
 
-
-    //SET PLAYER OBJECT NAME WITH NAME FROM FORM VALUE
+    
 });
