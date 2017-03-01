@@ -36,8 +36,9 @@ function Roll(){
  $(document).ready(function(){
    $("form#playGame").submit(function(event) {
      event.preventDefault();
-     var inputtedName = $("#name").val();
-     newPlayer = new Player(inputtedName);
+     console.log("submit function called")
+     var inputtedName = $("input#playerOne").val();
+     var newPlayer = new Player(inputtedName);
      // DISPLAY MESSAGE FOR PLAYER ONE TO GO FIRST
     console.log(newPlayer);
     var newPlayer = new Player ("Computer");
