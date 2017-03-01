@@ -6,28 +6,26 @@ var goal = 100;
 var currentPlayer;
 var currentScore;
 var rollValue;
+var rollScore = 0;
 
 // PLAYER CONSTRUCTOR - CREATES PLAYER OBJECTS
 function Player(name){
   this.name = name;
   this.totalScore = 0;
-};
-
-// // FUNCTION SCORE - CREATES SCORE OBJECT
-// function currentScore(playerName, rollValue){
-//   this.player
-//   this.currentScore;
-// };
+}
 
 // FUNCTION ROLL - SIMULATES ROLL OF ONE DICE AND RETURNS VALUES 1 THROUGH 6
 function Roll(){
-//math random function
-return number to Score function
-};
+	rollScore = function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+  };
+}
 
 // ON CLICK OF ROLL BUTTON PERFORMS THE ROLL FUNCTION
   $("#roll").click(function() {
-
+   Roll();
+   currentScore += rollScore;
+   console.log(currentScore);
   });
 
 // ON CLICK OF HOLD ADDS CURRENT ROLL SCORE TO PLAYERS CURRENTSCORE IN PLAYER OBJECT AND SWITCHES TO OTHER PLAYER
@@ -40,8 +38,10 @@ return number to Score function
    $("form#playGame").submit(function(event) {
      event.preventDefault();
      var inputtedName = $("#name").val();
-     var newPlayer = new Player(inputtedName);
+     newPlayer = new Player(inputtedName);
      // DISPLAY MESSAGE FOR PLAYER ONE TO GO FIRST
-
-    
+    console.log(newPlayer);
+    var newPlayer = new Player ("Computer");
+    console.log(newPlayer);
+  });
 });
