@@ -2,8 +2,8 @@
 <html>
   <head>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>Pig Dice</title>
   </head>
@@ -19,7 +19,7 @@
               <label for="name">Player Name</label>
               <input id="playerOne" type="text" class="form-control">
             </div>
-            <button id="accountForm" type="submit" class="btn btn-danger">Click to Play</button><br>
+            <button id="play" type="submit" class="btn btn-danger">Click to Play</button><br>
           </form>
         </div>
           <div class"row">
@@ -43,8 +43,21 @@
                   <p>Name: <span class="playerTwoName"></span></p>
                   <p>Score: <span class="playerTwoScore"></span></p>
                </div>
-             </div>
-          </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="panel panel-default  panel-primary" id="playerTwoScore">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Turn Information</h3>
+                </div>
+                <div class="panel-body">
+                  <p>Name: <span class="playerTwoName"></span></p>
+                  <p> Turn Score: <span class="playerTwoScore"></span></p>
+                  <button id="roll" type="submit" class="btn btn-success">Roll</button><br>
+                  <button id="hold" type="submit" class="btn btn-warning">Hold</button><br>
+               </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
